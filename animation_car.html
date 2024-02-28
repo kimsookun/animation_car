@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+       #bg{
+        background: url(images/bg.jpg)no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        position: relative;
+        overflow: hidden;
+       }
+
+      /*left_car*/
+
+       .left_car1{
+        width: 200px;
+        height: 200px;
+        background: url(images/left_car1.png)no-repeat;
+        background-size: contain;
+        position: absolute;
+        right:30px;
+        bottom:-50px;
+        animation: left_car1 1.5s 1s ease-out infinite; 
+       }
+
+       @keyframes left_car1{
+        from{right:30px; bottom: -50px;}
+        to{right:2000px; bottom:-50px;}
+       }
+
+       .left_car2{
+        width: 200px;
+        height: 200px;
+        background: url(images/left_car2.png)no-repeat;
+        background-size: contain;
+        position: absolute;
+        right:10px;
+        bottom:-10px;
+        animation: left_car2 1.5s 1.5s ease-out infinite; 
+       }
+
+       @keyframes left_car2{
+        from{right:10px; bottom: -10px;}
+        to{right:2000px; bottom:-10px;}
+       }
+
+       .left_car3{
+        width: 200px;
+        height: 200px;
+        background: url(images/left_car3.png)no-repeat;
+        background-size: contain;
+        position: absolute;
+        right:5px;
+        bottom:10px;
+        animation: left_car3 1.5s 1.8s ease-out infinite; 
+       }
+
+       @keyframes left_car3{
+        from{right:5px; bottom: 10px;}
+        to{right:2000px; bottom:10px;}
+       }
+
+       /*right_car*/
+
+       .right_car1{
+        width: 200px;
+        height: 200px;
+        background: url(images/right_car1.png)no-repeat;
+        background-size: contain;
+        position: absolute;
+        left:30px;
+        bottom:-70px;
+        animation: right_car1 1.5s 1s ease-out infinite; 
+       }
+
+       @keyframes right_car1{
+        from{left:30px; bottom: -70px;}
+        to{left:2000px; bottom:-70px;}
+       }
+
+       .right_car2{
+        width: 200px;
+        height: 200px;
+        background: url(images/right_car2.png)no-repeat;
+        background-size: contain;
+        position: absolute;
+        left:10px;
+        bottom:-70px;
+        animation: right_car2 1.5s 1.5s ease-out infinite; 
+       }
+
+       @keyframes right_car2{
+        from{left:10px; bottom: -70px;}
+        to{left:2000px; bottom:-70px;}
+       }
+
+       .right_car3{
+        width: 200px;
+        height: 200px;
+        background: url(images/right_car3.png)no-repeat;
+        background-size: contain;
+        position: absolute;
+        left:5px;
+        bottom:-70px;
+        animation: right_car3 1.5s 1.8s ease-out infinite; 
+       }
+
+       @keyframes right_car3{
+        from{left:5px; bottom: -70px;}
+        to{left:2000px; bottom:-70px;}
+       }
+      
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <div class="left_car1"></div>
+        <div class="left_car2"></div>
+        <div class="left_car3"></div>
+        <div class="right_car1"></div>
+        <div class="right_car2"></div>
+        <div class="right_car3"></div>
+    </div>
+
+</body>
+</html>

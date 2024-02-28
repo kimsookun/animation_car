@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/anime.js"></script>
+    <style>
+        .a{width: 100px;height: 100px;background: red;position: absolute;}
+    </style>
+    
+
+</head>
+<body>
+    <div class="a"></div>
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#fff;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M72.8,197.6c0,0,8.03-121.17,154.01-86.86c0,0-38.69,63.5,101.46,75.91c0,0,78.1-111.51,154.74-82.03
+	s116.06,87.14,116.79,110.5s53.28,189.78,134.31,68.61s86.13-166.42,86.13-166.42l-51.09,362.77c0,0-88.32,148.91-261.31-21.9
+	s-173.72,2.92-176.64,3.65s-151.09,0.73-113.87-132.85s-96.35-37.96-96.35-37.96S19.52,243.58,72.8,207.09"/>
+</svg>
+<script>
+    var path = anime.path('#Layer_1 path');
+    
+    anime({
+      targets: '.a',
+      translateX: path('x'),
+      translateY: path('y'),
+      rotate: path('angle'),
+      easing: 'linear',
+      duration: 2000,
+      loop: true
+    });
+    </script>
+</body>
+</html>
